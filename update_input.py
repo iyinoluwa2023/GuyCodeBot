@@ -90,7 +90,7 @@ def word_count():
     with open("guycode.txt") as file:
         for user in file:
             user = user.strip('\n')
-            data_file = "user_data/" + user + ".txt"
+            data_file = "user_data/__tweet_data__/" + user + ".txt"
             with open(data_file, 'r') as user_file:
                 data = user_file.read()
                 data = data.split()
